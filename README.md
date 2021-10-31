@@ -4,6 +4,7 @@
 [![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md
 )
 [![mit](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/NodeSecure/fs-walk/blob/master/LICENSE)
+![build](https://img.shields.io/github/workflow/status/NodeSecure/fs-walk/Node.js%20CI)
 
 Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but also Synchronously). Under the hood the code has been created using ES6 Generators.
 
