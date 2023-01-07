@@ -1,8 +1,10 @@
 # fs-walk
 ![version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/NodeSecure/fs-walk/master/package.json&query=$.version&label=Version)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/NodeSecure/fs-walk/commit-activity)
+[![OpenSSF
+Scorecard](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk/badge)](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk)
 [![mit](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/NodeSecure/fs-walk/blob/master/LICENSE)
-![build](https://img.shields.io/github/workflow/status/NodeSecure/fs-walk/Node.js%20CI)
+![build](https://img.shields.io/github/actions/workflow/status/NodeSecure/fs-walk/node.js.yml)
 
 Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but also Synchronously). Under the hood the code has been created using ES6 Generators.
 
