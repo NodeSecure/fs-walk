@@ -1,10 +1,11 @@
 # fs-walk
-![version](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/NodeSecure/fs-walk/master/package.json&query=$.version&label=Version)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/NodeSecure/fs-walk/commit-activity)
+
+![version](https://img.shields.io/badge/dynamic/json.svg?style=for-the-badge&url=https://raw.githubusercontent.com/NodeSecure/fs-walk/master/package.json&query=$.version&label=Version)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/NodeSecure/fs-walk/commit-activity)
 [![OpenSSF
-Scorecard](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk/badge)](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk)
-[![mit](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/NodeSecure/fs-walk/blob/master/LICENSE)
-![build](https://img.shields.io/github/actions/workflow/status/NodeSecure/fs-walk/node.js.yml)
+Scorecard](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk/badge?style=for-the-badge)](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk)
+[![mit](https://img.shields.io/github/license/Naereen/StrapDown.js.svg?style=for-the-badge)](https://github.com/NodeSecure/fs-walk/blob/master/LICENSE)
+![build](https://img.shields.io/github/actions/workflow/status/NodeSecure/fs-walk/node.js.yml?style=for-the-badge)
 
 Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but also Synchronously). Under the hood the code has been created using ES6 Generators.
 
@@ -18,6 +19,7 @@ Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but al
 > Performance over some of the features is a non-goal.
 
 ## Requirements
+
 - [Node.js](https://nodejs.org/en/) v14 or higher
 
 ## Getting Started
@@ -55,12 +57,15 @@ export type WalkResult = [dirent: fs.Dirent, absoluteFileLocation: string];
 ```
 
 ### walk(directory: string, options?: WalkOptions): AsyncIterableIterator< WalkResult >
+
 Asynchronous walk.
 
 ### walkSync(directory: string, options?: WalkOptions): IterableIterator< WalkResult >
+
 Synchronous walk (using readdirSync under the hood instead of opendir).
 
 For example fetching JavaScript files for a given location:
+
 ```js
 import { walkSync } from "@nodesecure/fs-walk";
 
@@ -71,11 +76,12 @@ const javascriptFiles = [...walkSync("./someDirectory", { extensions: new Set(["
 console.log(javascriptFiles);
 ```
 
-
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -97,4 +103,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
+
 MIT
