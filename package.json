@@ -4,8 +4,8 @@
   "description": "Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but also Synchronously)",
   "exports": "./index.js",
   "scripts": {
-    "lint": "cross-env eslint index.js",
-    "test-only": "cross-env esm-tape-runner 'test/**/*.js' | tap-monkey",
+    "lint": "eslint index.js",
+    "test-only": "node --test",
     "test": "npm run lint && npm run test-only",
     "coverage": "c8 -r html npm test"
   },
@@ -35,11 +35,7 @@
   "homepage": "https://github.com/NodeSecure/fs-walk#readme",
   "devDependencies": {
     "@nodesecure/eslint-config": "^1.5.0",
-    "@small-tech/esm-tape-runner": "^2.0.0",
-    "@small-tech/tap-monkey": "^1.4.0",
-    "c8": "^7.12.0",
-    "cross-env": "^7.0.3",
-    "tape": "^5.6.0"
+    "c8": "^7.12.0"
   },
   "type": "module"
 }
