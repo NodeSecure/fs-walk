@@ -1,4 +1,4 @@
-// Import Node.js dependencies
+// Import Node.js Dependencies
 import { opendir } from "fs/promises";
 import { readdirSync } from "fs";
 import path from "path";

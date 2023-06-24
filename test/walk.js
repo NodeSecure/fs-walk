@@ -1,10 +1,10 @@
-// Require Node.js Dependencies
+// Import Node.js Dependencies
 import test from "node:test";
 import assert from "node:assert";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-// Require Internal Dependencies
+// Import Internal Dependencies
 import { walk, walkSync } from "../index.js";
 
 // CONSTANTS
@@ -14,7 +14,7 @@ const kRootLocation = path.join(__dirname, "..");
 const kFixturesDir = path.join(__dirname, "fixtures");
 const kExpectedJSFiles = ["index.js", "test/walk.js"].map((fileLocation) => path.normalize(fileLocation));
 
-test("should return all JavaScript files of the project (Asynchronously)", async(t) => {
+test("should return all JavaScript files of the project (Asynchronously)", async() => {
   const files = [];
   const options = { extensions: new Set([".js"]) };
 
@@ -30,7 +30,7 @@ test("should return all JavaScript files of the project (Asynchronously)", async
   assert.deepEqual(files.sort(), kExpectedJSFiles);
 });
 
-test("should return all JavaScript files of the project (Synchronously)", async(t) => {
+test("should return all JavaScript files of the project (Synchronously)", async() => {
   const options = { extensions: new Set([".js"]) };
 
   const files = [...walkSync(kRootLocation, options)]
@@ -40,7 +40,7 @@ test("should return all JavaScript files of the project (Synchronously)", async(
   assert.deepEqual(files, kExpectedJSFiles);
 });
 
-test("should return all files in the fixtures directory", async(t) => {
+test("should return all files in the fixtures directory", async() => {
   const files = [...walkSync(kFixturesDir)]
     .filter(([dirent]) => dirent.isFile())
     .map(([, absoluteFileLocation]) => path.relative(kRootLocation, absoluteFileLocation));
