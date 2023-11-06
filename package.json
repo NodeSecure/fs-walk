@@ -37,5 +37,8 @@
     "@nodesecure/eslint-config": "^1.7.0",
     "c8": "^8.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
