@@ -16,6 +16,7 @@ Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but al
 - Enforce usage of Symbols for CONSTANTS.
 - Synchronous API.
 
+> [!NOTE]
 > Performance over some of the features is a non-goal.
 
 ## Requirements
@@ -35,7 +36,7 @@ $ yarn add @nodesecure/fs-walk
 ## Usage example
 
 ```js
-import path from "path";
+import path from "node:path";
 import { walk } from "@nodesecure/fs-walk";
 
 for await (const [dirent, absoluteFileLocation] of walk(".")) {
