@@ -54,14 +54,14 @@ export interface WalkOptions {
   extensions?: Set<string>;
 }
 
-export type WalkResult = [dirent: fs.Dirent, absoluteFileLocation: string];
+export type WalkEntry = [dirent: fs.Dirent, absoluteFileLocation: string];
 ```
 
-### walk(directory: string, options?: WalkOptions): AsyncIterableIterator< WalkResult >
+### walk(directory: string, options?: WalkOptions): AsyncIterableIterator< WalkEntry >
 
 Asynchronous walk.
 
-### walkSync(directory: string, options?: WalkOptions): IterableIterator< WalkResult >
+### walkSync(directory: string, options?: WalkOptions): IterableIterator< WalkEntry >
 
 Synchronous walk (using readdirSync under the hood instead of opendir).
 
