@@ -1,11 +1,21 @@
-# fs-walk
+<p align="center">
+  <img alt="fs-walk" src="https://github.com/NodeSecure/rfcs/assets/4438263/175b9aae-15fb-4374-acd9-da8401f25ea5" width="650">
+</p>
 
-![version](https://img.shields.io/badge/dynamic/json.svg?style=for-the-badge&url=https://raw.githubusercontent.com/NodeSecure/fs-walk/main/package.json&query=$.version&label=Version)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)](https://github.com/NodeSecure/fs-walk/graphs/commit-activity)
-[![OpenSSF
-Scorecard](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk/badge?style=for-the-badge)](https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk)
-[![mit](https://img.shields.io/github/license/NodeSecure/fs-walk.svg?style=for-the-badge)](https://github.com/NodeSecure/fs-walk/blob/main/LICENSE)
-![build](https://img.shields.io/github/actions/workflow/status/NodeSecure/fs-walk/node.js.yml?style=for-the-badge)
+<p align="center">
+    <a href="https://github.com/NodeSecure/fs-walk">
+      <img src="https://img.shields.io/github/package-json/v/NodeSecure/fs-walk?style=for-the-badge" alt="npm version">
+    </a>
+    <a href="https://github.com/NodeSecure/fs-walk">
+      <img src="https://img.shields.io/github/license/NodeSecure/fs-walk?style=for-the-badge" alt="license">
+    </a>
+    <a href="https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk">
+      <img src="https://api.securityscorecards.dev/projects/github.com/NodeSecure/fs-walk/badge?style=for-the-badge" alt="ossf scorecard">
+    </a>
+    <a href="https://github.com/NodeSecure/fs-walk/actions?query=workflow%3A%22Node.js+CI%22">
+      <img src="https://img.shields.io/github/actions/workflow/status/NodeSecure/fs-walk/node.js.yml?style=for-the-badge" alt="github ci workflow">
+    </a>
+</p>
 
 Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but also Synchronously). Under the hood the code has been created using ES6 Generators.
 
