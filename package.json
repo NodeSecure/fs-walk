@@ -1,6 +1,6 @@
 {
   "name": "@nodesecure/fs-walk",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but also Synchronously)",
   "exports": "./dist/index.js",
   "types": "./dist/index.d.ts",
