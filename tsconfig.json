@@ -1,17 +1,7 @@
 {
+  "extends": "@openally/config.typescript",
   "compilerOptions": {
-    "declaration": true,
-    "strictNullChecks": true,
-    "noImplicitThis": true,
-    "noEmitOnError": true,
-    "noImplicitAny": true,
-    "target": "ES2022",
     "outDir": "dist",
-    "module": "ES2022",
-    "moduleResolution": "node",
-    "skipDefaultLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
     "rootDir": "./src",
     "types": ["node"],
   },
