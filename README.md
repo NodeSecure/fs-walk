@@ -31,7 +31,7 @@ Modern FileSystem (fs) utilities to lazy walk directories Asynchronously (but al
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/en/) v18 or higher
+- [Node.js](https://nodejs.org/en/) v20 or higher
 
 ## Getting Started
 
